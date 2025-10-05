@@ -8,17 +8,17 @@ This repository contains the code and resources for my thesis project on fraud d
 - **Analyze** the distribution of features between legitimate and suspicious transactions.  
 - **Apply** resampling techniques (**undersampling** and **oversampling**) to handle class imbalance.  
 - **Evaluate** three classification models:  
-  - **Multi-Layer Perceptron (MLP)**  
+  - **Feed Forward Neural Network**  
   - **Random Forest Classifier**  
   - **Balanced Random Forest Classifier**  
 - **Run** a total of 16 experiments combining different resampling and classifier configurations.  
-- **Assess** model performance using metrics suitable for imbalanced data (**recall**, **precision**, **F1-score**, **ROC-AUC**).  
+- **Assess** model performance using metrics suitable for imbalanced data (**recall**, **precision**, **F1-score**).  
 
 **Dataset**
 
 - **Source:** Real-world anonymized credit card transaction data from the European Union.  
-- **Characteristics:** Strong class imbalance — fraudulent cases represent less than 1% of the dataset.  
-- **Note:** Due to data privacy and licensing restrictions, the dataset is **not included** in this repository.  
+- **Characteristics:** Strong class imbalance, fraudulent cases represent less than 1% of the dataset.  
+- **Link:** https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud/data
 
 **Methods**
 
@@ -27,15 +27,14 @@ This repository contains the code and resources for my thesis project on fraud d
   - **Random oversampling**  
 
 - **Classifiers:**  
-  - **Multi-Layer Perceptron (MLP)**  
+  - **Feed Forward Neural Network**  
   - **Random Forest**  
   - **Balanced Random Forest**  
 
 - **Evaluation Metrics:**  
-  - **Recall (primary metric)**  
+  - **Recall, primary metric for the fraudulent class**  
   - **Precision**  
   - **F1-score**  
-  - **ROC-AUC**  
 
 **Experiments**
 
@@ -49,5 +48,5 @@ Results emphasize the importance of properly addressing **class imbalance** in f
 **Results**
 
 - **Balanced Random Forest** achieved the most stable performance across resampling setups.  
-- **MLP** and **Random Forest** showed improvements under certain resampling strategies.  
-- **Recall** was the most informative metric for assessing fraud detection effectiveness.  
+- **Feed Forward Neural Network** and **Random Forest** showed improvements under certain resampling strategies.  
+ - A particular setting of the **Feed Forward Neural Network** was the best model throughout all the experiments.
