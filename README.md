@@ -41,7 +41,7 @@ This repository contains the code and resources for my thesis project on fraud d
 - **16 experiments** were carried out by combining:  
   - **2 resampling strategies**  
   - **3 classifiers**  
-  - **Different parameter settings**  
+  - **Different parameter settings**: There were 3 settings for each resampling strategy: A 1/10 ratio for the fraudulent and non fraudulent cases and a 1/20 ratio respectively.
 
 Results emphasize the importance of properly addressing **class imbalance** in fraud detection.  
 
@@ -49,4 +49,4 @@ Results emphasize the importance of properly addressing **class imbalance** in f
 
 - **Balanced Random Forest** achieved the most stable performance across resampling setups.  
 - **Feed Forward Neural Network** and **Random Forest** showed improvements under certain resampling strategies.  
- - A particular setting of the **Feed Forward Neural Network** was the best model throughout all the experiments.
+ - A particular setting of the **Feed Forward Neural Network** and the **Oversampling** for **1/20** fraudulent to non fraudulent ratio was the best model throughout all the experiments.
